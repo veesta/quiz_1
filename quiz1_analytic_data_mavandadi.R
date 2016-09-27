@@ -67,6 +67,6 @@ dep <- psych::alpha(as.data.frame(dep_items), check.keys=FALSE)$scores
 prog_sat <- psych::alpha(as.data.frame(prog_sat_items), check.keys=FALSE)$scores
 
 #combine everything 
-analytic_data <- cbind(categorical_variables,pos_affect,dep,prog_sat)
+analytic_data <- cbind(categorical_variables,pos_affect,dep,prog_sat,age)
 
-write_csv(analytic_data,path="quiz1_analytic_data_mavandadi.csv")
+write_csv(analytic_data,path="quiz1_analytic_data_mavandadi_final.csv")
